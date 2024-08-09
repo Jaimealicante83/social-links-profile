@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h4, p, span {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #141414;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1F1F1F;
+  max-width: 32.7rem;
+  width: 100%;
+  padding: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .container .card {
+    max-width: 45.6rem;
+    padding: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .card {
+    max-width: 38.4rem;
+  }
+}
+.container .card img {
+  border-radius: 5rem;
+  height: 8.8rem;
+  width: auto;
+  margin-bottom: 2.4rem;
+}
+.container .card h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 0.2rem;
+}
+.container .card h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 150%;
+  color: #C4F82A;
+  margin-bottom: 2.4rem;
+}
+.container .card quote {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 2.4rem;
+}
+.container .card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container .card ul li {
+  width: 100%;
+}
+.container .card ul li button {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 150%;
+  background-color: #333333;
+  border: none;
+  border-radius: 0.8rem;
+  color: #FFFFFF;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.container .card ul li button:hover {
+  background-color: #C4F82A;
+  color: #141414;
+}/*# sourceMappingURL=style.css.map */
